@@ -4,7 +4,7 @@ const $name = $('#name');
 const $rules = $('#rules');
 const $hp = $('#hp');
 const $type = $('#type');
-const $attacks = $('#attacks');
+const $ability = $('#ability')
 const $weakness = $('#weakness');
 const $resistance = $('#resistance');
 const $retreat = $('#retreat');
@@ -39,6 +39,12 @@ function render() {
   }
   $hp.text(cardData.data[0].hp);
   $type.text(cardData.data[0].types);
+  if (cardData.data[0].abilities){
+    $("#ability").append("<tr><td>"+ cardData.data[0].abilities[0].name + "</td></tr>" 
+    + "<tr><td>" + cardData.data[0].abilities[0].text + "</td></tr>");
+  } else {
+    $ability.text('none');
+  }
   if (cardData.data[0].attacks){
     for (i = 0; i < cardData.data[0].attacks.length; i++){
       $("#attacks").append("<tr><td>"+ cardData.data[0].attacks[i].name + "</td></tr>" 
