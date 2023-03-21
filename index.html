@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>Pokemon Card Search</title>
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <h1>Pokemon Card Info</h1>
+  <main>
+    <h3>Pokemon Card Name</h3>
+    <p id="name"></p>
+    <h4>Special Rules</h4>
+    <p id="rules"></p>
+    <h4>Hit Points</h4>
+    <p id="hp"></p>
+    <h4>Type</h4>
+    <p id="type"></p>
+    <h4>Ability</h4>
+    <table id="ability"></table>
+    <h4>Attacks</h4>
+    <table id="attacks"></table>
+    <h4>Weakness</h4>
+    <p id="weakness"></p>
+    <h4>Resistance</h4>
+    <p id="resistance"></p>
+    <h4>Retreat Cost</h4>
+    <p id="retreat"></p>
+  </main>
+  <form>
+    <input type="text" placeholder="Card Name" />
+    <input type="submit" value="Get Card Info" />
+  </form>
+</body>
+</html>
