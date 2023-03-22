@@ -48,7 +48,7 @@ function render() {
   if (cardData.data[0].attacks){
     let attack = '';
     for (i = 0; i < cardData.data[0].attacks.length; i++){
-      attack = attack + cardData.data[0].attacks[i].name + " " + cardData.data[0].attacks[i].cost.join(" ") + " " + cardData.data[0].attacks[i].damage + " " + cardData.data[0].attacks[i].text;
+      attack = attack + cardData.data[0].attacks[i].name + " " + cardData.data[0].attacks[i].cost.join(" ") + " " + cardData.data[0].attacks[i].damage + " " + cardData.data[0].attacks[i].text + " || ";
     };
     $attack.text(attack);
   };
