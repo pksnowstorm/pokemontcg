@@ -52,7 +52,7 @@ function render() {
       + cardData.data[0].attacks[i].cost.join(" ") + " " 
       + cardData.data[0].attacks[i].damage + " " 
       + cardData.data[0].attacks[i].text;
-    }
+    };
     $attack.text(attack);
   };
   if (cardData.data[0].weaknesses){
