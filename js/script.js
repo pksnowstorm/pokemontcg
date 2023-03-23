@@ -58,7 +58,7 @@ function render() {
       resistance = 'none';
     };
     if (cardData.data[i].retreatCost){
-      retreat = cardData.data[0].retreatCost.join(" ");
+      retreat = cardData.data[i].retreatCost.join(" ");
     } else {
       retreat = 'free';
     };
