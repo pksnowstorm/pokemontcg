@@ -1,3 +1,4 @@
+document.getElementById("pokemon").style.display = "none";
 let cardData, userInput;
 
 const $input = $('input[type="text"]');
@@ -15,6 +16,7 @@ function handleGetData(event) {
     (data) => {
       cardData = data;
       render();
+      document.getElementById("pokemon").style.display = "block";
     },
     (error) => {
       console.log('bad request', error);
@@ -66,4 +68,5 @@ function render() {
 
 $("button").click(function(){
   $("tbody").empty();
+  document.getElementById("pokemon").style.display = "none";
 });
