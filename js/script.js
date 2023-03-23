@@ -64,7 +64,7 @@ function render() {
     };
     $('table tbody').append('<tr><td><img src="' + cardData.data[i].images.small + '"</td>' + '<td>' + cardData.data[i].name + '</td>' + '<td>' + rules + '</td>' + '<td>' + cardData.data[i].hp + '</td>' +'<td>' + cardData.data[i].types + '</td>' + '<td>' + ability + '</td>' + '<td>' + attack + '</td>' + '<td>' + weakness + '</td>' + '<td>' + resistance + '</td>' + '<td>' + retreat + '</td></tr>');
   };
-}
+};
 
 $("button").click(function(){
   $("tbody").empty();
