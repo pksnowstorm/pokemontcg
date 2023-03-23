@@ -27,7 +27,7 @@ function handleGetData(event) {
 function render() {
   for (i = 0; i <cardData.data.length; i++){
     let rules = '';
-    let abiity = '';
+    let ability = '';
     let attack = '';
     let weakness = '';
     let resistance = '';
